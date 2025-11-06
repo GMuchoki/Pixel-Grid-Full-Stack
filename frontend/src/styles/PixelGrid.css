@@ -1,0 +1,25 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(20, 20px);
+  grid-template-rows: repeat(20, 20px);
+}
+
+.gridItem {
+  width: 20px;
+  height: 20px;
+  border: 1px solid lightgray;
+}
+
+@media (max-width: 440px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(20, 4vw);
+    grid-template-rows: repeat(20, 4vw);
+  }
+
+  .gridItem {
+    width: 4vw;
+    height: 4vw;
+    border: 1px solid lightgray;
+  }
+}
