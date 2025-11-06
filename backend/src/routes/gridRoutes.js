@@ -1,8 +1,10 @@
 import express from "express";
-import { getGridData } from "../controllers/gridControllers.js";
+import { addGridData, getGridData } from "../controllers/gridControllers.js";
 
 const router = express.Router();
 
 router.get("/grid", getGridData);
+
+router.post("/setGridColor", addGridData);
 
 export default router;
