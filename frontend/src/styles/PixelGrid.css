@@ -8,6 +8,13 @@
   width: 20px;
   height: 20px;
   border: 1px solid lightgray;
+  cursor: pointer;
+}
+
+.gridItem:hover {
+  border: 1px solid gray;
+  transform: scale(1.25);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 440px) {
